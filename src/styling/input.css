@@ -1,0 +1,26 @@
+@font-face {
+  font-family: manrope;
+  src: url(./Manrope-VariableFont_wght.ttf);
+}
+
+body {
+  font-family: manrope;
+}
+
+label {
+  font-weight: 600;
+}
+
+#input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+input {
+  width: 493px;
+  padding: 8px;
+  background-color: #EEF0F2;
+  border: none;
+  border-radius: 4px;
+}
