@@ -14,13 +14,15 @@ label {
 #input-container {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 0.5rem;
+  padding: 0 1rem;
 }
 
 input {
   width: 493px;
   padding: 8px;
+  height: 28px;
   background-color: #EEF0F2;
   border: none;
-  border-radius: 4px;
+  border-radius: 0.5rem;
 }
