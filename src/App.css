@@ -1,18 +1,62 @@
 #display {
-  display: flex;
-  justify-content: center; 
-  align-items: center;
-  height: 100vh; 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+  height: 80vh; 
 }
 
-#input-container {
+.container {
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
+}
+
+#inputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 #login-container {
+  max-width: 600px;
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
+  grid-area: 1/2;
+}
+
+#coin-icon {
+  width: 2rem;
+  height: fit-content;
+  margin-left: 2rem;
+}
+
+#purple-cf {
+  grid-area: 0/2;
+}
+
+#red-cf, #yellow-cf {
+  grid-area: 2/2;
+}
+
+#red-cf {
+  width: 220px;
+}
+
+#cf-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #EEF0F2;
+  padding: 1.5rem 0;
+}
+
+#compount-header {
+  color: #0057DA;
+  font-weight: 800;
 }

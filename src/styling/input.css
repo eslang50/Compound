@@ -15,12 +15,12 @@ label {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  padding: 0 1rem;
 }
 
 input {
-  width: 493px;
-  padding: 8px;
+  width: 100%;
+  padding: 1.5rem 1rem;
+  box-sizing: border-box;
   height: 28px;
   background-color: #EEF0F2;
   border: none;
