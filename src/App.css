@@ -1,3 +1,5 @@
+/* SIGN UP PAGE 1 */
+
 #display {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -60,3 +62,94 @@
   color: #0057DA;
   font-weight: 800;
 }
+
+/* SIGN UP PAGE 2 */
+
+.progress-bar {
+  display: flex;
+  align-items: center;
+  gap: 20rem;
+  position: relative;
+}
+
+.progress-nav {
+  display: flex;
+  justify-content: center;  
+  background-color: #EEF0F2;
+  padding: 3rem 0 1.5rem 0;
+  margin-bottom: 5%;
+}
+
+.progress {
+  flex: 1;
+  text-align: center;
+}
+
+#heading-two {
+  color: #0057DA;
+}
+
+#add-info, #register, #earn-badge {
+  display: block;
+  margin: 0 auto;
+  width: 3rem;
+}
+
+#financial-info, #financial-interest {
+  display: flex;  
+  gap: 1rem;
+}
+
+#financial-container {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 20%;
+  margin-top: 3rem;
+}
+
+#incomeStatus {
+  display: flex;
+  flex-direction: column;
+}
+
+#incomeStatus > label {
+  margin-bottom: 1rem;
+}
+
+#select-dropdown {
+  border: #B2B9C0 solid 2px;
+  border-radius: 4px;
+  width: 200px;
+  padding: 8px 8px;
+  cursor: pointer;
+}
+
+#status {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+#status > h4 {
+  margin: 0;
+  margin-top: 1rem;
+}
+
+
+.status-option {
+  display: flex;  
+  align-items: center;
+  gap: 8px;
+}
+
+.status-option > input {
+  margin: 0;
+}
+
+label {
+  white-space: nowrap;
+}
+
+
+
