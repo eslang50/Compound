@@ -20,7 +20,7 @@ export default function SignUpPage1() {
           <Input label="Password" placeholder="Enter password" />
         </div>
           <Link to="./SignUpPages/SignUpPage2" style={{ textDecoration: 'none' }} >
-            <Button text="Sign up now" id="sign-up" ></Button>
+            <Button text="Sign up now" className="sign-up" ></Button>
           </Link>
       </div>
         <div id='cf-container'>

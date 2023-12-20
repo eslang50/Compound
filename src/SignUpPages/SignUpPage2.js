@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../components/Header";
+import { Link } from "react-router-dom";
 
 export default function SignUpPage2() {
   return (
@@ -22,7 +23,7 @@ export default function SignUpPage2() {
       </div>
         <Header text="Tell us a little more about your financial personality" /> 
       <div id="financial-container">
-        <div>
+        <div id="financial-container-one">
           <div id="financial-info">
             <img src={process.env.PUBLIC_URL + '/button1.svg'} alt="" />
             <h4>Financial Info</h4>
@@ -59,11 +60,20 @@ export default function SignUpPage2() {
             <h4>My Financial Interests</h4>
           </div>
           <div id="interests">
-
+            <button class="interest-button">Budgeting -</button>
+            <button class="interest-button">Investing +</button>
+            <button class="interest-button">Credit Management +</button>
+            <button class="interest-button">Debt Management +</button>
+            <button class="interest-button">Retirement Planning +</button>
+            <button class="interest-button">Tax Planning +</button>
+            <button class="interest-button">Goal Setting +</button>
+            <button class="interest-button">Estate Planning +</button>
           </div>
         </div>
-
       </div>
+      <Link to={'../../SignUpPages/SignUpPage3'} style={{ textDecoration: 'none' }} >
+        <button id="next-button">Next</button> 
+      </Link>
     </div>
   );
 }

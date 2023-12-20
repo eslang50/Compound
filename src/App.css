@@ -63,6 +63,10 @@
   font-weight: 800;
 }
 
+.sign-up {
+  width: 100%;
+}
+
 /* SIGN UP PAGE 2 */
 
 .progress-bar {
@@ -101,10 +105,15 @@
 }
 
 #financial-container {
-  display: flex;
-  justify-content: space-around;
-  margin-right: 20%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  margin-right: 10%;
   margin-top: 3rem;
+}
+
+#financial-container-one {
+  padding-left: 20%;
 }
 
 #incomeStatus {
@@ -122,6 +131,7 @@
   width: 200px;
   padding: 8px 8px;
   cursor: pointer;
+  padding-right: 16px;
 }
 
 #status {
@@ -151,5 +161,53 @@ label {
   white-space: nowrap;
 }
 
+input[type='radio']:checked {
+  accent-color: #0057DA;
+}
 
+#interests {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
 
+.interest-button {
+  white-space: nowrap;
+  width: fit-content;
+}
+
+#next-button {
+  width: 150px;
+  margin-left: 80%;
+}
+
+/* SIGN UP PAGE 3 */
+#right-wing {
+  transform: scaleX(-1);
+}
+
+#welcome-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+#dashboard-button {
+  width: fit-content;
+  padding: 0 3rem;
+}
+
+#paragraph-one {
+  width: 459px;
+}
+
+#paragraph-two {
+  width: 578px;
+  padding-top: 2rem;
+}
+
+#paragraph-one, #paragraph-two {
+  text-align: center;
+  margin: 0;
+}

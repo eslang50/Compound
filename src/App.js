@@ -1,7 +1,7 @@
-import './App.css';
 import SignUpPage1 from './SignUpPages/SignUpPage1';
 import SignUpPage2 from './SignUpPages/SignUpPage2';
 import SignUpPage3 from './SignUpPages/SignUpPage3';
+import './App.css';
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
