@@ -8,8 +8,10 @@ export default function SignUpPage2() {
       <div class="progress-nav">
         <div class="progress-bar">
           <div class="progess">
-            <img src={process.env.PUBLIC_URL + '/CAIcon1.svg'} alt="" id="register" />
-            <h4>Register</h4>
+            <Link to={'../'} >
+              <img src={process.env.PUBLIC_URL + '/CAIcon1.svg'} alt="" id="register" />
+              <h4>Register</h4>
+            </Link>
           </div>
           <div class="progess">
             <img src={process.env.PUBLIC_URL + '/CAIcon2.svg'} alt="" id="add-info" />
@@ -60,7 +62,7 @@ export default function SignUpPage2() {
             <h4>My Financial Interests</h4>
           </div>
           <div id="interests">
-            <button class="interest-button">Budgeting -</button>
+            <button class="interest-button">Budgeting &#8722;</button>
             <button class="interest-button">Investing +</button>
             <button class="interest-button">Credit Management +</button>
             <button class="interest-button">Debt Management +</button>

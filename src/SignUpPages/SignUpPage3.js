@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../components/Header";
+import { Link } from "react-router-dom";
 
 export default function SignUpPage3() {
   return (
@@ -7,12 +8,16 @@ export default function SignUpPage3() {
       <div class="progress-nav">
         <div class="progress-bar">
           <div class="progess">
-            <img src={process.env.PUBLIC_URL + '/CAIcon1.svg'} alt="" id="register" />
-            <h4>Register</h4>
+            <Link to={'../'}  >
+              <img src={process.env.PUBLIC_URL + '/CAIcon1.svg'} alt="" id="register" />
+              <h4>Register</h4>
+            </Link>
           </div>
           <div class="progess">
-            <img src={process.env.PUBLIC_URL + '/CAIcon2V2.svg'} alt="" id="add-info" />
-            <h4 >Add Your Financial Info</h4>
+            <Link to={'../SignUpPages/SignUpPage2'} >
+              <img src={process.env.PUBLIC_URL + '/CAIcon2V2.svg'} alt="" id="add-info" />
+              <h4 >Add Your Financial Info</h4>
+            </Link>
           </div>
           <div class="progess">
             <img src={process.env.PUBLIC_URL + '/CAIcon3.svg'} alt="" id="earn-badge" />
