@@ -29,8 +29,8 @@ export default function SignUpPage3() {
         <Header text="Welcome to Compound!"></Header>
         <p id="paragraph-one" >Congrats on finishing your onboarding! As a reward, you've earned your first badge: Profile Perfection!</p>
         <div id="picture-container">
-          <img src={process.env.PUBLIC_URL + '/left-green-wing.svg'} alt="" />
-          <img src={process.env.PUBLIC_URL + '/purple-coin.svg'} alt="" />
+          <img src={process.env.PUBLIC_URL + '/left-green-wing.svg'} alt="" id="left-wing" />
+          <img src={process.env.PUBLIC_URL + '/purple-coin.svg'} alt="" id="purple-coin" />
           <img src={process.env.PUBLIC_URL + '/left-green-wing.svg'} alt="" id="right-wing" />
         </div>
         <p id="paragraph-two">You've earned it for taking the first step towards financial empowerment. We're here to support you every step of the way. Start exploring more features to continue your financial journey!</p>

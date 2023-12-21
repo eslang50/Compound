@@ -220,3 +220,45 @@ a {
 a:visited {
   color: black; 
 }
+
+@media (max-width:600px) {
+  #login-container {
+    grid-column: 1 / -1;
+    width: 300px;
+  }
+  #red-cf, #purple-cf, #yellow-cf {
+    visibility: hidden;
+  }
+  #display {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #financial-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  #financial-container-two {
+    padding-left: 4.5rem;
+  } 
+  #next-button {
+    width: 150px;
+    margin: 2rem auto;
+  }
+  .progress-bar {
+    gap: 4px;
+  }
+  .progress-nav {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  #left-wing, #right-wing, #purple-coin {
+    width: 100px;
+  }
+  #paragraph-one, #paragraph-two {
+    width: 350px;
+  }
+  
+}

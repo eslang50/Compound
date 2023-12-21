@@ -69,7 +69,7 @@ export default function SignUpPage2() {
               </div>
             </div>
         </div>
-        <div>
+        <div id="financial-container-two" >
           <div id="financial-interest">
             <img src={process.env.PUBLIC_URL + '/button2.svg'} alt="" />
             <h4>My Financial Interests</h4>
