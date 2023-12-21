@@ -1,8 +1,21 @@
-import React from "react";
+import React, {useState} from "react";
 import Header from "../components/Header";
 import { Link } from "react-router-dom";
+import InterestButton from "../components/InterestButton";
 
 export default function SignUpPage2() {
+
+  const interests = [
+    'Budgeting',
+    'Investing',
+    'Credit Management',
+    'Debt Management',
+    'Retirement Planning',
+    'Tax Planning',
+    'Goal Setting',
+    'Estate Planning'
+  ]
+
   return (
     <div>
       <div class="progress-nav">
@@ -62,14 +75,9 @@ export default function SignUpPage2() {
             <h4>My Financial Interests</h4>
           </div>
           <div id="interests">
-            <button class="interest-button">Budgeting &#8722;</button>
-            <button class="interest-button">Investing +</button>
-            <button class="interest-button">Credit Management +</button>
-            <button class="interest-button">Debt Management +</button>
-            <button class="interest-button">Retirement Planning +</button>
-            <button class="interest-button">Tax Planning +</button>
-            <button class="interest-button">Goal Setting +</button>
-            <button class="interest-button">Estate Planning +</button>
+            {interests.map((interest) => (
+              <InterestButton interest={interest} />
+            ))}
           </div>
         </div>
       </div>

@@ -9,7 +9,7 @@ export default function SignUpPage1() {
     <div>
       <div class="nav">
         <img src={process.env.PUBLIC_URL + '/star.png'} alt="coin icon" id='coin-icon' />
-        <p id='compount-header' >Compound</p>
+        <p id='compount-header'>Compound</p>
       </div>
       <div id='display'>
         <img src={process.env.PUBLIC_URL + './CF3.svg'} alt="Crowdfunding person icon" id='purple-cf' />
@@ -19,7 +19,7 @@ export default function SignUpPage1() {
           <Input label="Email address" placeholder="Enter email address" />
           <Input label="Password" placeholder="Enter password" />
         </div>
-          <Link to="./SignUpPages/SignUpPage2" style={{ textDecoration: 'none' }} >
+          <Link to="./SignUpPages/SignUpPage2" >
             <Button text="Sign up now" className="sign-up" ></Button>
           </Link>
       </div>
